@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KJ Web Monetization Widget Test</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f7f9fa;
+        min-height: 100vh;
+      }
+      header {
+        background: #2d3748;
+        color: #fff;
+        width: 100%;
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      }
+      main {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+        padding: 2rem 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+      }
+      @media (max-width: 576px) {
+        main {
+          padding: 1rem 0.5rem;
+          margin-top: 1rem;
+        }
+        header {
+          padding: 1.2rem 0 0.7rem 0;
+        }
+      }
+      .widget-area {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="mb-0">KJ's Web Monetized Site</h1>
+    </header>
+    <div
+      class="container-fluid d-flex flex-column align-items-center justify-content-center px-0"
+    >
+      <main class="mt-4 w-100" style="max-width: 500px">
+        <h2 class="h4">Widget Test Page</h2>
+        <p class="mb-4">
+          This page is for testing the Web Monetization widget below. If the
+          widget loads, the integration is working.
+        </p>
+        <div class="widget-area">
+          <script
+            id="wmt-init-script"
+            type="module"
+            src="https://c26739bf-publisher-tools-cdn.webmonetization.workers.dev/init.js?wa=ilp.interledger-test.dev/kj-usd&tag=version1&types=widget"
+          ></script>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
